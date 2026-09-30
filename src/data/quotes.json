@@ -1,0 +1,266 @@
+[
+  {
+    "id": "autumn-01",
+    "theme": "가을",
+    "ko": "계절이 깊어질수록 마음은 조금 더 천천히 걷는다.",
+    "en": "As the season deepens, the heart learns to walk more slowly.",
+    "searchKeywords": [
+      "autumn",
+      "fall leaves",
+      "autumn light"
+    ]
+  },
+  {
+    "id": "autumn-02",
+    "theme": "가을",
+    "ko": "놓아야 할 것들은 낙엽처럼 때가 되면 가벼워진다.",
+    "en": "What we need to let go of becomes lighter when its season comes.",
+    "searchKeywords": [
+      "falling leaves",
+      "autumn leaves",
+      "golden autumn"
+    ]
+  },
+  {
+    "id": "autumn-03",
+    "theme": "가을",
+    "ko": "변해가는 풍경 속에서도 나다운 색은 남는다.",
+    "en": "Even as the scenery changes, some colors remain our own.",
+    "searchKeywords": [
+      "autumn landscape",
+      "fall colors",
+      "autumn nature"
+    ]
+  },
+  {
+    "id": "autumn-04",
+    "theme": "가을",
+    "ko": "서두르지 않아도 계절은 제때 아름다워진다.",
+    "en": "A season becomes beautiful in its own time, without rushing.",
+    "searchKeywords": [
+      "autumn morning",
+      "fall forest",
+      "peaceful autumn"
+    ]
+  },
+  {
+    "id": "autumn-05",
+    "theme": "가을",
+    "ko": "끝나가는 것들에도 오래 바라볼 만한 빛이 있다.",
+    "en": "Even things nearing their end can hold a light worth watching.",
+    "searchKeywords": [
+      "late autumn",
+      "autumn sunset",
+      "golden leaves"
+    ]
+  },
+  {
+    "id": "forest-01",
+    "theme": "숲길",
+    "ko": "길을 다 알지 못해도 다음 한 걸음은 내디딜 수 있다.",
+    "en": "You do not need to know the whole path to take the next step.",
+    "searchKeywords": [
+      "forest path",
+      "woodland trail",
+      "misty forest"
+    ]
+  },
+  {
+    "id": "forest-02",
+    "theme": "숲길",
+    "ko": "조용한 길에서는 내 마음의 소리가 더 또렷해진다.",
+    "en": "On quiet paths, the voice within becomes easier to hear.",
+    "searchKeywords": [
+      "quiet forest",
+      "forest trail",
+      "green woods"
+    ]
+  },
+  {
+    "id": "forest-03",
+    "theme": "숲길",
+    "ko": "멀리 가는 것보다 나에게 맞는 방향을 찾는 일이 먼저다.",
+    "en": "Finding the right direction matters more than going far.",
+    "searchKeywords": [
+      "forest road",
+      "winding path",
+      "nature trail"
+    ]
+  },
+  {
+    "id": "forest-04",
+    "theme": "숲길",
+    "ko": "길이 굽어 있다는 건 아직 보지 못한 풍경이 있다는 뜻이다.",
+    "en": "A bending path means there is still a view you have not seen.",
+    "searchKeywords": [
+      "curved forest path",
+      "woodland road",
+      "forest journey"
+    ]
+  },
+  {
+    "id": "forest-05",
+    "theme": "숲길",
+    "ko": "잠시 멈춘다고 길을 잃은 것은 아니다.",
+    "en": "Stopping for a while does not mean you have lost your way.",
+    "searchKeywords": [
+      "forest walk",
+      "peaceful woods",
+      "forest sunlight"
+    ]
+  },
+  {
+    "id": "sunlight-01",
+    "theme": "햇살",
+    "ko": "빛은 가장 작은 틈으로도 들어온다.",
+    "en": "Light finds its way through even the smallest opening.",
+    "searchKeywords": [
+      "sunlight",
+      "sun rays",
+      "window light"
+    ]
+  },
+  {
+    "id": "sunlight-02",
+    "theme": "햇살",
+    "ko": "오늘의 따뜻함을 내일의 걱정 때문에 놓치지 말자.",
+    "en": "Do not miss today's warmth because of tomorrow's worries.",
+    "searchKeywords": [
+      "warm sunlight",
+      "morning sun",
+      "golden light"
+    ]
+  },
+  {
+    "id": "sunlight-03",
+    "theme": "햇살",
+    "ko": "아주 평범한 하루도 빛이 머물면 장면이 된다.",
+    "en": "Even an ordinary day becomes a scene when light stays awhile.",
+    "searchKeywords": [
+      "sunlit room",
+      "soft sunlight",
+      "everyday light"
+    ]
+  },
+  {
+    "id": "sunlight-04",
+    "theme": "햇살",
+    "ko": "따뜻함은 언제나 큰 소리로 찾아오는 것이 아니다.",
+    "en": "Warmth does not always arrive loudly.",
+    "searchKeywords": [
+      "soft light",
+      "gentle sunlight",
+      "morning window"
+    ]
+  },
+  {
+    "id": "sunlight-05",
+    "theme": "햇살",
+    "ko": "빛을 향한다는 건 어둠이 없었다는 뜻이 아니다.",
+    "en": "Turning toward the light does not mean there was never darkness.",
+    "searchKeywords": [
+      "sun rays forest",
+      "light and shadow",
+      "sunbeam"
+    ]
+  },
+  {
+    "id": "rain-01",
+    "theme": "비",
+    "ko": "비가 오는 날에는 세상도 잠시 속도를 늦춘다.",
+    "en": "On rainy days, even the world seems to slow down.",
+    "searchKeywords": [
+      "rainy day",
+      "rain window",
+      "quiet rain"
+    ]
+  },
+  {
+    "id": "rain-02",
+    "theme": "비",
+    "ko": "흐린 날이라고 모든 빛이 사라진 것은 아니다.",
+    "en": "A cloudy day does not mean all the light is gone.",
+    "searchKeywords": [
+      "rain clouds",
+      "moody rain",
+      "cloudy landscape"
+    ]
+  },
+  {
+    "id": "rain-03",
+    "theme": "비",
+    "ko": "젖은 길 위에서는 익숙한 풍경도 조금 다르게 빛난다.",
+    "en": "On wet streets, familiar places learn to shine differently.",
+    "searchKeywords": [
+      "wet street",
+      "rainy city",
+      "rain reflections"
+    ]
+  },
+  {
+    "id": "rain-04",
+    "theme": "비",
+    "ko": "비를 피하는 동안 알게 되는 마음도 있다.",
+    "en": "Some feelings reveal themselves while we wait for the rain to pass.",
+    "searchKeywords": [
+      "rain shelter",
+      "window rain",
+      "rain cafe"
+    ]
+  },
+  {
+    "id": "rain-05",
+    "theme": "비",
+    "ko": "멈추지 않는 비도 없고, 영원히 흐린 하늘도 없다.",
+    "en": "No rain falls forever, and no sky stays gray without end.",
+    "searchKeywords": [
+      "rain clearing",
+      "after rain",
+      "storm clouds"
+    ]
+  },
+  {
+    "id": "sunset-01",
+    "theme": "노을",
+    "ko": "하루는 사라지는 대신 마지막 빛을 남긴다.",
+    "en": "A day does not simply disappear; it leaves its final light behind.",
+    "searchKeywords": [
+      "sunset",
+      "golden hour",
+      "evening sky"
+    ]
+  },
+  {
+    "id": "sunset-02",
+    "theme": "노을",
+    "ko": "끝이라는 이름의 풍경도 때로는 가장 아름답다.",
+    "en": "Sometimes the view we call an ending is the most beautiful one.",
+    "searchKeywords": [
+      "sunset horizon",
+      "dusk",
+      "orange sky"
+    ]
+  },
+  {
+    "id": "sunset-03",
+    "theme": "노을",
+    "ko": "오늘을 잘 보냈다는 증거는 거창하지 않아도 된다.",
+    "en": "Proof of a day well lived does not have to be extraordinary.",
+    "searchKeywords": [
+      "peaceful sunset",
+      "evening landscape",
+      "sunset field"
+    ]
+  },
+  {
+    "id": "sunset-04",
+    "theme": "노을",
+    "ko": "저무는 빛을 바라보며 내일을 조금 덜 두려워하기로 했다.",
+    "en": "Watching the fading light, I decided to fear tomorrow a little less.",
+    "searchKeywords": [
+      "sunset silhouette",
+      "calm sunset",
+      "twilight"
+    ]
+  }
+]
