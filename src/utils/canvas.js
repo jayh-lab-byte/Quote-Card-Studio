@@ -1,5 +1,10 @@
 import { textColor } from './color.js';
 export const sizes = { '1:1': [1080, 1080], '4:5': [1080, 1350], '9:16': [1080, 1920] };
+export const fonts = {
+  sans: { label: '고딕 · System Sans', family: '"Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif' },
+  serif: { label: '명조 · System Serif', family: '"AppleMyungjo", "Batang", Georgia, serif' },
+  mono: { label: '모노 · System Mono', family: '"SFMono-Regular", Consolas, "Apple SD Gothic Neo", monospace' },
+};
 let cachedUrl;
 let cachedImage;
 export function loadImage(url) {
@@ -44,19 +49,34 @@ export function drawCard(canvas, image, photo, settings) {
   canvas.height = height;
   const ctx = canvas.getContext('2d');
   if (!ctx) throw new Error('Canvas를 사용할 수 없습니다.');
-  const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight);
-  const sourceWidth = width / scale;
-  const sourceHeight = height / scale;
-  ctx.drawImage(image, (image.naturalWidth - sourceWidth) / 2, (image.naturalHeight - sourceHeight) / 2, sourceWidth, sourceHeight, 0, 0, width, height);
-  ctx.fillStyle = `rgba(0,0,0,${settings.overlay})`;
+  if (image) {
+    const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight);
+    const sourceWidth = width / scale;
+    const sourceHeight = height / scale;
+    ctx.drawImage(image, (image.naturalWidth - sourceWidth) / 2, (image.naturalHeight - sourceHeight) / 2, sourceWidth, sourceHeight, 0, 0, width, height);
+  } else {
+    const background = ctx.createLinearGradient(0, 0, width, height);
+    background.addColorStop(0, '#3a4e6b'); background.addColorStop(1, '#111a29');
+    ctx.fillStyle = background; ctx.fillRect(0, 0, width, height);
+  }
+  const automaticColor = textColor(photo?.color);
+  const opacity = settings.overlayMode === 'auto' ? (automaticColor === '#111111' ? 0.18 : 0.42) : settings.overlay;
+  if (settings.overlayStyle === 'gradient') {
+    const gradient = ctx.createLinearGradient(0, 0, 0, height);
+    gradient.addColorStop(0, `rgba(0,0,0,${settings.position === 'top' ? opacity : opacity * 0.2})`);
+    gradient.addColorStop(0.5, `rgba(0,0,0,${opacity * 0.65})`);
+    gradient.addColorStop(1, `rgba(0,0,0,${opacity})`);
+    ctx.fillStyle = gradient;
+  } else ctx.fillStyle = `rgba(0,0,0,${opacity})`;
   ctx.fillRect(0, 0, width, height);
-  ctx.fillStyle = textColor(photo.color);
+  ctx.fillStyle = settings.autoColor === false ? settings.textColor : automaticColor;
   ctx.textAlign = settings.align;
   ctx.textBaseline = 'top';
   const padding = 90;
   const maxWidth = width - padding * 2;
   const x = settings.align === 'left' ? padding : settings.align === 'right' ? width - padding : width / 2;
-  const font = size => `${size}px Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif`;
+  const font = size => `${size}px ${(fonts[settings.font] || fonts.sans).family}`;
+  const contentBottom = height - padding - (settings.showCredit ? 60 : 0);
   let size = settings.fontSize;
   let quoteLines, authorLines, authorSize, blockHeight;
   // Fit long text within the card while preserving the chosen size for normal quotes.
@@ -65,26 +85,34 @@ export function drawCard(canvas, image, photo, settings) {
     quoteLines = wrapText(ctx, settings.quote, maxWidth);
     authorSize = Math.max(14, size * 0.5);
     ctx.font = font(authorSize);
-    authorLines = settings.author.trim() ? wrapText(ctx, `— ${settings.author.trim()}`, maxWidth) : [];
+    authorLines = settings.showAuthor !== false && settings.author.trim() ? wrapText(ctx, `— ${settings.author.trim()}`, maxWidth) : [];
     blockHeight = quoteLines.length * size * 1.5 + (authorLines.length ? size * 0.7 + authorLines.length * authorSize * 1.5 : 0);
-    if (blockHeight <= height - padding * 2 || size <= 12) break;
+    if (blockHeight <= contentBottom - padding || size <= 12) break;
     size -= 1;
   } while (true);
-  let y = Math.max(padding, (height - blockHeight) / 2);
+  let y = settings.position === 'top' ? padding : settings.position === 'bottom' ? contentBottom - blockHeight : (padding + contentBottom - blockHeight) / 2;
+  y = Math.max(padding, y);
   ctx.save();
-  ctx.beginPath(); ctx.rect(padding, padding, maxWidth, height - padding * 2); ctx.clip();
+  ctx.beginPath(); ctx.rect(padding, padding, maxWidth, contentBottom - padding); ctx.clip();
   ctx.font = font(size);
   for (const line of quoteLines) { ctx.fillText(line, x, y); y += size * 1.5; }
   y += size * 0.7;
   ctx.font = font(authorSize);
+  ctx.globalAlpha = 0.75;
   for (const line of authorLines) { ctx.fillText(line, x, y); y += authorSize * 1.5; }
   ctx.restore();
+  if (settings.showCredit && photo) {
+    ctx.font = font(20); ctx.textAlign = 'center'; ctx.globalAlpha = 0.8;
+    ctx.fillText(`Photo by ${photo.user.name} / Unsplash`, width / 2, height - 55, maxWidth);
+    ctx.globalAlpha = 1;
+  }
 }
 
 export async function createPng(photo, settings) {
   if (!photo) throw new Error('먼저 사진을 선택하세요.');
   try {
     const image = await loadImage(photo.urls.regular);
+    await document.fonts.ready;
     const canvas = document.createElement('canvas');
     drawCard(canvas, image, photo, settings);
     return await new Promise((resolve, reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error()), 'image/png'));

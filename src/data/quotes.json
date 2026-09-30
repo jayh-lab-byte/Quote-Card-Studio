@@ -1,5 +1,149 @@
 [
   {
+    "id": "studio-1",
+    "theme": "도전",
+    "ko": "첫걸음이 작아도, 향하는 곳은 작지 않다.",
+    "en": "A small first step can lead somewhere great.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-2",
+    "theme": "도전",
+    "ko": "길이 없으면 오늘의 걸음이 길의 시작이 된다.",
+    "en": "When there is no path, today’s step begins one.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-3",
+    "theme": "위로",
+    "ko": "오늘은 여기까지 온 것만으로도 충분하다.",
+    "en": "For today, making it this far is enough.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-4",
+    "theme": "위로",
+    "ko": "쉬어가는 시간도 당신의 여정에 속한다.",
+    "en": "Rest is part of your journey, too.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-5",
+    "theme": "새벽",
+    "ko": "아직 조용한 세상에 새로운 하루가 스며든다.",
+    "en": "A new day enters a world still quiet.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-6",
+    "theme": "새벽",
+    "ko": "어둠의 끝에서 작은 빛부터 시작하자.",
+    "en": "At the edge of darkness, begin with a little light.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-7",
+    "theme": "바다",
+    "ko": "파도가 돌아오듯, 마음에도 다시 기회가 온다.",
+    "en": "Like returning waves, new chances reach the heart.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-8",
+    "theme": "바다",
+    "ko": "넓은 바다 앞에서 걱정의 크기를 다시 배운다.",
+    "en": "Before the open sea, worries find their proper size.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-9",
+    "theme": "하늘",
+    "ko": "구름이 흘러가도 하늘은 그 자리에 있다.",
+    "en": "Clouds pass, and the sky remains.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-10",
+    "theme": "하늘",
+    "ko": "고개를 들면 오늘에도 여백이 있다.",
+    "en": "Look up: there is still room in today.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-11",
+    "theme": "여행",
+    "ko": "낯선 길에서 나의 새로운 면을 만난다.",
+    "en": "On unfamiliar roads, I meet new parts of myself.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-12",
+    "theme": "여행",
+    "ko": "도착하기 전의 풍경도 여행이다.",
+    "en": "The scenery before arrival is part of the journey.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-13",
+    "theme": "명상",
+    "ko": "한 번의 숨에 지금 이 순간을 담는다.",
+    "en": "Hold this moment in a single breath.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-14",
+    "theme": "명상",
+    "ko": "고요함은 더하는 것이 아니라 잠시 내려놓는 것.",
+    "en": "Stillness comes from setting things down.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-15",
+    "theme": "종이",
+    "ko": "빈 페이지는 아직 무엇이든 될 수 있다.",
+    "en": "A blank page can still become anything.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-16",
+    "theme": "종이",
+    "ko": "오늘의 한 줄이 내일의 이야기를 연다.",
+    "en": "Today’s line opens tomorrow’s story.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-17",
+    "theme": "색상",
+    "ko": "서로 다른 색이 모여 하나의 풍경이 된다.",
+    "en": "Different colors come together as one landscape.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
+    "id": "studio-18",
+    "theme": "색상",
+    "ko": "내 마음의 색은 내가 고르기로 했다.",
+    "en": "I choose the colors of my own heart.",
+    "author": "직접 작성 · Quote Card Studio",
+    "searchKeywords": []
+  },
+  {
     "id": "autumn-01",
     "theme": "가을",
     "ko": "계절이 깊어질수록 마음은 조금 더 천천히 걷는다.",
